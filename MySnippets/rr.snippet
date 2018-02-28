@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>MVC 輸出網頁內容</Title>
+      <Shortcut>rr</Shortcut>
+      <Description>MVC Debug</Description>
+      <Author>Microsoft Corporation</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Output</ID>
+          <ToolTip>要輸出的文字</ToolTip>
+          <Default>Debug</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[System.Web.HttpContext.Current.Response.Write("$Output$");
+            System.Web.HttpContext.Current.Response.Write("<br>");]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
